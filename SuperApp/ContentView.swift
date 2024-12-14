@@ -9,26 +9,14 @@ import SwiftUI
 import TodoMiniApp
 
 struct ContentView: View {
-    @State private var miniApp: MiniAppProtocol?
     
     var body: some View {
         VStack {
-            if let miniApp = miniApp {
-                miniApp.view
-            }
-            
-            Button {
-                loadMiniApp()
-            } label: {
-                Text("Initialize")
-            }
+            TodoMiniAppView.createSampleView()
         }
         
     }
-    
-    func loadMiniApp() {
-        miniApp = TodoMiniAppView()
-    }
+
 }
 
 
