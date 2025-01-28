@@ -61,6 +61,7 @@ git clone https://github.com/AustinXu-Dev/AnotherSampleApp.git
 sh GenerateXCFramework.sh
 ```
 3. The output `.xcframework` will be saved in the project directory.
+4. Do this step for `AnotherSampleApp` as well.
 
 ### Step 3: Embed XCFrameworks in the Super App
 1. Open the Super App repository in Xcode.
