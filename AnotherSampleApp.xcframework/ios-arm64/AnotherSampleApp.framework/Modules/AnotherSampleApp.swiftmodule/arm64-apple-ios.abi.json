@@ -1,0 +1,109 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AnotherSampleApp",
+    "printedName": "AnotherSampleApp",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnotherSampleApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AnotherSampleApp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnotherSampleAppView",
+        "printedName": "AnotherSampleAppView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnotherSampleAppView",
+                "printedName": "AnotherSampleApp.AnotherSampleAppView",
+                "usr": "s:16AnotherSampleApp0abC4ViewC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16AnotherSampleApp0abC4ViewCACycfc",
+            "mangledName": "$s16AnotherSampleApp0abC4ViewCACycfc",
+            "moduleName": "AnotherSampleApp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createView",
+            "printedName": "createView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AnotherSampleApp0abC4ViewC06createD0QryFZ",
+            "mangledName": "$s16AnotherSampleApp0abC4ViewC06createD0QryFZ",
+            "moduleName": "AnotherSampleApp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16AnotherSampleApp0abC4ViewC",
+        "mangledName": "$s16AnotherSampleApp0abC4ViewC",
+        "moduleName": "AnotherSampleApp",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

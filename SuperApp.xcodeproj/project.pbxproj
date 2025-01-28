@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC7E75A52D0DFD4A00471472 /* TodoMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = BC7E75A42D0DFD4A00471472 /* TodoMiniApp */; };
+		BC3D4BA52D489A4000D94F9D /* TodoMiniApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3D4BA32D489A3C00D94F9D /* TodoMiniApp.xcframework */; };
+		BC3D4BA62D489A4000D94F9D /* TodoMiniApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC3D4BA32D489A3C00D94F9D /* TodoMiniApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC5708C22D19B359006FC939 /* AnotherSampleApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5708C02D19B352006FC939 /* AnotherSampleApp.xcframework */; };
+		BC5708C32D19B359006FC939 /* AnotherSampleApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC5708C02D19B352006FC939 /* AnotherSampleApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -17,6 +20,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BC3D4BA62D489A4000D94F9D /* TodoMiniApp.xcframework in Embed Frameworks */,
+				BC5708C32D19B359006FC939 /* AnotherSampleApp.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -25,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		B3E9BFCB2D0B424A00482EAE /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3D4BA32D489A3C00D94F9D /* TodoMiniApp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TodoMiniApp.xcframework; sourceTree = "<group>"; };
+		BC5708C02D19B352006FC939 /* AnotherSampleApp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AnotherSampleApp.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7E75A52D0DFD4A00471472 /* TodoMiniApp in Frameworks */,
+				BC3D4BA52D489A4000D94F9D /* TodoMiniApp.xcframework in Frameworks */,
+				BC5708C22D19B359006FC939 /* AnotherSampleApp.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +60,8 @@
 			children = (
 				B3E9BFCD2D0B424A00482EAE /* SuperApp */,
 				B3E9BFCC2D0B424A00482EAE /* Products */,
+				BC5708C02D19B352006FC939 /* AnotherSampleApp.xcframework */,
+				BC3D4BA32D489A3C00D94F9D /* TodoMiniApp.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +94,6 @@
 			);
 			name = SuperApp;
 			packageProductDependencies = (
-				BC7E75A42D0DFD4A00471472 /* TodoMiniApp */,
 			);
 			productName = SuperApp;
 			productReference = B3E9BFCB2D0B424A00482EAE /* SuperApp.app */;
@@ -115,7 +124,6 @@
 			mainGroup = B3E9BFC22D0B424A00482EAE;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				BC7E75A32D0DFD4A00471472 /* XCRemoteSwiftPackageReference "TodoMiniApp" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B3E9BFCC2D0B424A00482EAE /* Products */;
@@ -288,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,25 +367,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BC7E75A32D0DFD4A00471472 /* XCRemoteSwiftPackageReference "TodoMiniApp" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AustinXu-Dev/TodoMiniApp.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BC7E75A42D0DFD4A00471472 /* TodoMiniApp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BC7E75A32D0DFD4A00471472 /* XCRemoteSwiftPackageReference "TodoMiniApp" */;
-			productName = TodoMiniApp;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3E9BFC32D0B424A00482EAE /* Project object */;
 }

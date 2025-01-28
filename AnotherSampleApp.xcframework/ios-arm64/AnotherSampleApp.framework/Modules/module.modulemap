@@ -1,0 +1,6 @@
+framework module AnotherSampleApp {
+  umbrella header "AnotherSampleApp.h"
+  export *
+
+  module * { export * }
+}
